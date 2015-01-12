@@ -131,7 +131,7 @@ public struct HUDContentView {
     public final class SystemActivityIndicatorView: UIView {
         
         required public override init() {
-            super.init(frame: CGRectMake(0.0, 0.0, 120.0, 120.0))
+            super.init(frame: CGRectMake(0.0, 0.0, 40.0, 40.0))
             self.commonInit()
         }
         
@@ -145,10 +145,10 @@ public struct HUDContentView {
         }
         
         func commonInit () {
-            self.backgroundColor = UIColor.redColor()
+            self.backgroundColor = UIColor.clearColor()
             self.alpha = 0.8
             
-            let activity = UIActivityIndicatorView(activityIndicatorStyle: UIActivityIndicatorViewStyle.WhiteLarge)
+            let activity = UIActivityIndicatorView(activityIndicatorStyle: UIActivityIndicatorViewStyle.Gray)
             activity.color = UIColor.blackColor()
             activity.startAnimating()
             
